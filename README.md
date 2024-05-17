@@ -9,14 +9,14 @@
 ### 1. Инициализация git
 #### При создании проекта нужно сперва инициализировать git (работаем в git bash внутри папки с проектом):
 
-```http
+```bash
   git init
 ```
 
 ### 2. Создание origin
 #### Добавляем origin (связываем рабочую папку с проектом и репозиторий для проекта):
 
-```http
+```bash
   git remote add origin https://[token]@github.com/[github_nickname]/[repo]
 ```
 
@@ -27,7 +27,7 @@
 | `repo`  |  репозиторий на github для нашего проекта |
 
 #### Пример:
-```http
+```bash
   git remote add origin https://ghg_1234sdfsdfsd@github.com/mark123/my_project
 ```
 
@@ -35,7 +35,7 @@
 #### Создаем файл .gitignore, в нем перечисляем файлы и папки которые не нужно отправлять в репозиторий (файлы .env, конфигурационные файлы, пакеты и тд)
 
 #### Пример наполнения node_modules:
-```http
+```bash
   /node_modules
   token.txt
   **/logs
@@ -45,14 +45,14 @@
 ### 4. Добавление файлов на отправку
 
 #### Точка - все файлы, также, вместо точки можно перечислять какие файлы нужно отправить
-```http
+```bash
 git add .
 ```
 
 ### 5. Коммит файлов
 
 #### Регистрируем версию проекта для отправки, добавляем комментарий к обновлению  
-```http
+```bash
 git commit -m "added some files "
 ```
 
@@ -60,12 +60,12 @@ git commit -m "added some files "
 
 #### Отправляем на origin (наш репозиторий) на ветку (по умолчанию либо master либо main)
 
-```http
+```bash
 git push -u origin <ветка>
 ```
 #### Пример:
 
-```http
+```bash
 git push -u origin master
 
 ```
@@ -73,14 +73,14 @@ git push -u origin master
 
 ### Отправка обновлений занимает 3 команды:
 #### 1. Добавление файлов
-```http
+```bash
   git add .
 ```
 #### 2. Коммит
-```http
+```bash
   git commit -m "added some files "
 ```
 #### 3. Пуш в репозиторий
-```http
+```bash
   git push -u origin <ветка> 
 ```
